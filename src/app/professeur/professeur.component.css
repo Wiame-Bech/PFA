@@ -1,0 +1,96 @@
+body {
+  margin: 10px; /* Supprime les marges par défaut du corps de la page */
+  padding: 0; /* Supprime les espacements internes par défaut du corps de la page */
+  font-family: Arial, sans-serif; /* Définit la police de caractères à utiliser pour le texte */
+  background-image: url(../../assets/imgs/hero-bg.jpg); /* Crée un arrière-plan dégradé de haut en bas */
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Pour occuper au moins toute la hauteur de la vue */
+}
+
+.container {
+  max-width: 900px;
+  background: #f8fcfdf4;
+  background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(244, 247, 251) 100%);
+  border-radius: 40px;
+  padding: 25px 35px;
+  border: 5px solid rgb(255, 255, 255);
+  box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 30px 30px -20px;
+  margin: 70px;
+  /*backdrop-filter:blur(13px);
+  --wekit-backdrop-filter: blur(15px);
+  border-right: 1px solid rgba(255, 255, 255, 0.6); */
+}
+h1 {
+  text-align: center; /* Centre le texte à l'intérieur du titre */
+  padding: 20px 0; /* Ajoute un espacement de 20 pixels en haut et en bas du titre */
+  color:rgb(23, 111, 211);
+}
+
+/* Ce bloc de code définit les styles pour le formulaire */
+form {
+  width: 400px; /* Fixe la largeur du formulaire à 80% de la largeur de son conteneur */
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.form .input {
+  width: 200px;
+  background: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-right: 10px;
+  box-shadow: #cff0ff 0px 10px 10px -5px;
+  border-inline: 2px solid transparent;
+}
+
+form table tr td {
+  padding-right: 20px;
+
+}
+
+/* Ce bloc de code définit les styles pour les balises label */
+label {
+  display: block; /* Affiche chaque label sur une nouvelle ligne */
+  margin-bottom: 10px; /* Ajoute un espacement de 10 pixels en bas de chaque label */
+  color: rgb(23, 111, 211);
+}
+
+/* Ce bloc de code définit les styles pour les champs de formulaire */
+input[type="text"],
+input[type="date"],
+input[type="time"],
+select {
+  width: 100%; /* Définit la largeur de chaque champ à 100% de la largeur de son conteneur */
+  padding: 8px; /* Ajoute un espacement interne de 8 pixels pour chaque champ */
+  margin-bottom: 15px; /* Ajoute un espacement de 15 pixels en bas de chaque champ */
+  box-sizing: border-box; /* Garantit que la largeur spécifiée comprend également le rembourrage et les bordures du champ */
+  border: none;
+  padding: 15px 20px;
+  border-radius: 20px;
+  margin-top: 15px;
+  box-shadow: #cff0ff 0px 10px 10px -5px;
+  border-inline: 2px solid transparent;
+}
+
+/* Ce bloc de code définit les styles pour les boutons de soumission et de réinitialisation du formulaire */
+input[type="submit"],
+input[type="reset"] {
+  width: 100%; /* Définit la largeur des boutons à 100% de la largeur de leur conteneur */
+  padding: 10px; /* Ajoute un espacement interne de 10 pixels pour les boutons */
+  background: linear-gradient(45deg, rgb(16, 137, 211) 0%, rgb(18, 177, 209) 100%) ;
+  margin-bottom: 15px; /* Ajoute un espacement de 15 pixels en bas de chaque champ */
+  border: none; /* Supprime les bordures autour des boutons */
+  cursor: pointer; /* Change le curseur de la souris en pointeur pour indiquer qu'il s'agit d'un élément cliquable */
+  border: none;
+  padding: 15px 20px;
+  border-radius: 20px;
+  margin-top: 15px;
+  box-shadow: #cff0ff 0px 10px 10px -5px;
+  border-inline: 2px solid transparent;
+}

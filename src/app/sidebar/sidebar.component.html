@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="sidebar.component.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <aside class="sidebar">
+        <div class="logo">
+            <img src="assets\imgs\schoolops-removebg-preview.png" alt="logo">
+        </div>
+        <ul class="links">
+            <li>
+                <span class="material-symbols-outlined"><i class="fa-solid fa-user"></i></span>
+                <a routerLink="/prof" >Professeur</a>
+            </li>
+            <li>
+                <span class="material-symbols-outlined"><i class="fa-solid fa-book"></i>
+                </span>
+                <a routerLink="/filiere">Filiere</a>
+            </li>
+            <li>
+                <span class="material-symbols-outlined"><i class="fa-solid fa-pen"></i>
+                </span>
+                <a  routerLink="/matiere">Matiere</a>
+            </li>
+            <li>
+                <span class="material-symbols-outlined"><i class="fa-solid fa-sack-dollar"></i></span>
+                <a  routerLink="/comptabilite">Comptabilité</a>
+            </li>
+            <hr>
+            <li>
+
+                <span class="material-symbols-outlined">
+                <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-box-arrow-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0z" />
+                        <path fill-rule="evenodd"
+                            d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708z" />
+                    </svg>
+                </span>
+                <a href="#">Logout </a>
+            </li>
+        </ul>
+    </aside>
+</body>
+</html>
+

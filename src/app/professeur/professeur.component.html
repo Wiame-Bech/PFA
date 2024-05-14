@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'informations du professeur</title>
+    <link rel="stylesheet" href="professeur.component.css">
+</head>
+<body>
+  <app-sidebar></app-sidebar>
+<router-outlet />
+    <div class="container">
+        <h1 class="heading"> [nom Professeur]  </h1>
+        <form action="" class="form">
+            <table>
+                <tr>
+                    <td><label for="date">Date:</label></td>
+                </tr>
+                    <tr>
+
+                    <td><input type="date" id="date" name="date" /></td>
+                </tr>
+                <tr>
+                    <td><label for="début_séance">Début de la séance:</label></td>
+                    <td> <label for="fin_séance">Fin de la séance:</label></td>
+                </tr>
+                <tr>
+                    <td><input type="time" id="début_séance" name="début_séance" /></td>
+                    <td><input type="time" id="fin_séance" name="fin_séance" /></td>
+                </tr>
+                <tr>
+                    <td> <label for="filière">Filière :</label></td>
+                    <td><label for="matière">Matière :</label></td>
+                </tr>
+                <tr>
+                    <td><select name="filière">
+                        <option value="ISI1">ISI 1</option>
+                        <option value="ISI2">ISI 2</option>
+                        <option value="ISI3">ISI 3</option>
+                        <option value="ISI4">ISI 4</option>
+                        <option value="ISI5">ISI 5</option>
+                        <option value="CISI1">CISI 1</option>
+                        <option value="CISI2">CISI 2</option>
+                        <option value="CISI3">CISI 3</option>
+                        <option value="CISI4">CISI 4</option>
+                        <option value="CISI5">CISI 5</option>
+                        <option value="MGE1">MGE 1</option>
+                        <option value="MGE2">MGE 2</option>
+                        <option value="MGE3">MGE 3</option>
+                        <option value="MGE4">MGE 4</option>
+                        <option value="MGE5">MGE 5</option>
+                    </select></td>
+                    <td> <select name="matière">
+                        <option value="français">Français</option>
+                        <option value="anglais">Anglais</option>
+                        <option value="languageC">Langage C</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" class="login-button" value="Valider" /></td>
+                    <td><input type="reset" class="login-button" value="Annuler" /></td>
+                </tr>
+
+        </table>
+        </form>
+    </div>
+</body>
+</html>
